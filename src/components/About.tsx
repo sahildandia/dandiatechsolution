@@ -32,13 +32,31 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">ABOUT DANDIA TECH SOLUTIONS</h2>
-            <div className="space-y-6 text-lg text-gray-400">
+            <div className="space-y-6 text-lg text-gray-400 mb-10">
               <p>
                 Dandia Tech Solutions is a technology-focused freelance studio founded by Sahil Kumar. We focus on building modern websites, software, AI-powered solutions, automation systems, and digital products.
               </p>
               <p>
                 Our approach combines technical development with design thinking, allowing us to work from an initial idea through design, development, refinement, and delivery.
               </p>
+            </div>
+
+            <div className="bg-[#050505] border border-white/5 p-6 rounded-2xl inline-block w-full max-w-md">
+              <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">CURRENTLY BUILDING</h4>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3 text-gray-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span> AI Calling Agent
+                </li>
+                <li className="flex items-center gap-3 text-gray-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span> Computer Vision Project
+                </li>
+                <li className="flex items-center gap-3 text-gray-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span> Dandia Tech Solutions Website
+                </li>
+                <li className="flex items-center gap-3 text-gray-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-500 shrink-0"></span> Experimental AI Workflow
+                </li>
+              </ul>
             </div>
           </motion.div>
 

@@ -26,26 +26,14 @@ const reasons = [
 ];
 
 const processSteps = [
-  {
-    num: "01",
-    title: "DISCOVER",
-    desc: "Understand the idea, problem, audience and requirements.",
-  },
-  {
-    num: "02",
-    title: "DESIGN",
-    desc: "Plan the user experience, visual direction and technical approach.",
-  },
-  {
-    num: "03",
-    title: "BUILD",
-    desc: "Develop the solution using appropriate technologies.",
-  },
-  {
-    num: "04",
-    title: "LAUNCH & REFINE",
-    desc: "Test, optimize, deploy and continuously improve.",
-  },
+  { num: "01", title: "IDEA", desc: "Define the core concept and goals." },
+  { num: "02", title: "DISCOVERY", desc: "Understand requirements and plan the approach." },
+  { num: "03", title: "UI/UX", desc: "Design the user experience and visual direction." },
+  { num: "04", title: "DEVELOPMENT", desc: "Build the solution using modern technologies." },
+  { num: "05", title: "AI / AUTOMATION", desc: "Integrate intelligent systems and workflows." },
+  { num: "06", title: "TESTING", desc: "Ensure quality, security, and performance." },
+  { num: "07", title: "DEPLOYMENT", desc: "Launch the product to the live environment." },
+  { num: "08", title: "PRODUCT", desc: "Deliver the final digital solution." },
 ];
 
 export default function WhyUsAndProcess() {
@@ -92,29 +80,26 @@ export default function WhyUsAndProcess() {
             FROM IDEA TO LAUNCH
           </motion.h2>
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-white/10 -translate-y-1/2 z-0"></div>
+          <div className="relative max-w-4xl mx-auto">
+            <div className="hidden md:block absolute top-0 left-[28px] w-[2px] h-full bg-white/10 z-0"></div>
             
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6 relative z-10">
+            <div className="space-y-12 relative z-10">
               {processSteps.map((step, idx) => (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: idx * 0.2 }}
-                  className="relative group"
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className="relative group flex items-start md:items-center gap-8"
                 >
-                  {/* Dot */}
-                  <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#050505] border-2 border-[#00f0ff] z-20 group-hover:scale-150 group-hover:shadow-[0_0_15px_#00f0ff] transition-all duration-300"></div>
+                  <div className="w-14 h-14 rounded-full bg-[#050505] border-2 border-white/20 group-hover:border-[#00f0ff] flex items-center justify-center shrink-0 z-20 group-hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300">
+                    <span className="text-[#00f0ff] font-bold">{step.num}</span>
+                  </div>
                   
-                  <div className="md:pt-16 md:text-center">
-                    <div className="text-5xl font-black text-white/5 mb-4 group-hover:text-white/10 transition-colors md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 pointer-events-none">{step.num}</div>
-                    <div className="relative z-10 md:mt-[80px]">
-                      <h3 className="text-xl font-bold text-white mb-3 tracking-wide">{step.title}</h3>
-                      <p className="text-gray-400 text-sm leading-relaxed">{step.desc}</p>
-                    </div>
+                  <div className="pt-2 md:pt-0">
+                    <h3 className="text-xl font-bold text-white mb-2 tracking-wide group-hover:text-[#00f0ff] transition-colors">{step.title}</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </motion.div>
               ))}
