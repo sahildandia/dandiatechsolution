@@ -50,11 +50,11 @@ export default function Contact() {
               <div className="p-6 rounded-2xl bg-[#050505] border border-white/5 hover:border-white/20 transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
                   <div className="text-sm text-gray-500 mb-1 font-semibold">WHATSAPP</div>
-                  <a href="https://wa.me/9186028286" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white hover:text-[#25D366] transition-colors flex items-center gap-2">
-                    +91 86028 28286
+                  <a href="https://wa.me/919186028286" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white hover:text-[#25D366] transition-colors flex items-center gap-2">
+                    +91 9186028286
                   </a>
                 </div>
-                <a href="https://wa.me/9186028286" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] rounded-full text-sm font-semibold transition-colors flex items-center gap-2 shrink-0">
+                <a href="https://wa.me/919186028286" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] rounded-full text-sm font-semibold transition-colors flex items-center gap-2 shrink-0">
                   <MessageCircle size={16} /> Chat on WhatsApp
                 </a>
               </div>

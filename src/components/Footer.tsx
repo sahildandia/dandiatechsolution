@@ -55,8 +55,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/9186028286" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors flex items-center justify-between group">
-                  <span>+91 86028 28286</span>
+                <a href="https://wa.me/919186028286" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors flex items-center justify-between group">
+                  <span>+91 9186028286</span>
                   <ArrowUpRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
               </li>
