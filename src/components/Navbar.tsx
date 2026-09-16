@@ -58,10 +58,10 @@ export default function Navbar() {
             ))}
           </ul>
           <Link
-            href="#contact"
-            className="px-6 py-2.5 bg-white text-black font-semibold rounded-full text-sm hover:bg-gray-200 transition-colors"
+            href="/#build-solution"
+            className="px-6 py-2.5 bg-[#00f0ff] text-black font-bold rounded-full text-sm hover:bg-[#00c0cc] transition-colors"
           >
-            Start a Project
+            Start a Project →
           </Link>
         </nav>
 
@@ -96,11 +96,11 @@ export default function Navbar() {
                 ))}
               </ul>
               <Link
-                href="#contact"
+                href="/#build-solution"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-8 px-8 py-3 bg-white text-black font-bold rounded-full text-lg"
+                className="mt-8 px-8 py-3 bg-[#00f0ff] text-black font-bold rounded-full text-lg"
               >
-                Start a Project
+                Start a Project →
               </Link>
             </motion.div>
           )}

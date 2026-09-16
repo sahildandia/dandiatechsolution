@@ -12,7 +12,11 @@ import WhyUsAndProcess from "@/components/WhyUsAndProcess";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import BuildYourSolution from "@/components/BuildYourSolution";
+import BookConsultation from "@/components/BookConsultation";
+import BlogPlaceholder from "@/components/BlogPlaceholder";
 import Contact from "@/components/Contact";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -23,14 +27,15 @@ export default function Home() {
       <Services />
       <Solutions />
       <SelectedWork />
-      <CaseStudies />
       <AILab />
       <Technology />
       <About />
       <WhyUsAndProcess />
       <Pricing />
+      <BlogPlaceholder />
       <FAQ />
       <BuildYourSolution />
+      <BookConsultation />
       <Contact />
     </main>
   );

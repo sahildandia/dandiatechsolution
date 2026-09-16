@@ -5,11 +5,11 @@ import { ArrowUpRight } from "lucide-react";
 
 const footerLinks = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "#services" },
-  { name: "Solutions", href: "#solutions" },
-  { name: "Projects", href: "#projects" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Services", href: "/#services" },
+  { name: "Projects", href: "/#projects" },
+  { name: "AI Lab", href: "/#ai-lab" },
+  { name: "FAQ", href: "/#faq" },
+  { name: "Client Portal", href: "/client" },
 ];
 
 export default function Footer() {
@@ -23,12 +23,12 @@ export default function Footer() {
               <span className="text-2xl font-bold tracking-wider text-white leading-none">
                 DANDIA
               </span>
-              <span className="text-sm tracking-[0.2em] text-gray-500 font-medium">
+              <span className="text-sm tracking-[0.2em] text-[#00f0ff] font-medium">
                 TECH SOLUTIONS
               </span>
             </Link>
             <p className="text-xl text-gray-400 max-w-sm">
-              Turning Ideas Into Digital Solutions.
+              Technology & Digital Solutions. Turning Ideas Into Reality.
             </p>
           </div>
 
@@ -55,8 +55,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/919186028286" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors flex items-center justify-between group">
-                  <span>+91 9186028286</span>
+                <a href="https://wa.me/918602828286" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors flex items-center justify-between group">
+                  <span>+91 86028 28286</span>
                   <ArrowUpRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </a>
               </li>

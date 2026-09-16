@@ -40,8 +40,8 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="#contact"
-              className="w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors"
+              href="/#build-solution"
+              className="w-full sm:w-auto px-8 py-4 bg-[#00f0ff] text-black font-bold rounded-full flex items-center justify-center gap-2 hover:bg-[#00c0cc] transition-colors"
             >
               Start a Project <ArrowRight size={18} />
             </Link>
